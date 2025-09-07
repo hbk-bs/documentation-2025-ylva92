@@ -47,17 +47,12 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
 }
 
 .project-card {
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.2);
-    padding: 1.2rem;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -79,6 +74,7 @@ p {
 }
 
 /* Media Queries */
+/* Tablet */
 @media screen and (min-width: 768px) {
     body {
         padding: 2rem;
@@ -86,13 +82,15 @@ p {
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem;
+        padding: 1.5rem;
     }
 }
 
+/* Desktop */
 @media screen and (min-width: 1024px) {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
     }
 }
 
