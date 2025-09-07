@@ -41,7 +41,6 @@ p {
     hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
-    text-align: justify;
 }
 
 .projects {
