@@ -38,6 +38,10 @@ h3 {
 p {
     font-size: clamp(1rem, 2vw, 1.1rem);
     line-height: 1.5;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    text-align: justify;
 }
 
 .projects {
