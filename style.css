@@ -80,6 +80,13 @@ p {
     background: #444;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
 footer {
     text-align: center;
     margin-top: 3rem;
