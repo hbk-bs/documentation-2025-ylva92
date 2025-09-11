@@ -2,7 +2,7 @@
 
 ## Grundlagen der digitalen Gestaltiung 2
 
-dies ist eine Dokumentation aller Arbeiten aus dem zweiten Semester. 
+dies ist eine Dokumentation meiner Arbeiten aus dem zweiten Semester. 
 
 Themen:
 - Teachable Machine

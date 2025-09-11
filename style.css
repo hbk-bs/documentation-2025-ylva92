@@ -97,6 +97,18 @@ footer p {
     hyphens: none;
 }
 
+.read-more, .read-less {
+    cursor: pointer;
+    color: #3b3838;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Media Queries */
 /* Tablet */
 @media screen and (min-width: 768px) {

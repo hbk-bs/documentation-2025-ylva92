@@ -40,11 +40,42 @@ Unsere Geschichte entwickelte sich schnell, in meiner Gruppe hatten wir konkrete
 </p>
                 <a href="https://hbk-bs.github.io/a-generative-graphic-novel-team-slym-shady">Zur Website</a>
             </div>
+            <div class="project-card">
+                <h3>Reflexion</h3>
+                <p class="truncated-text">Das gesamte Semester ging sehr schnell vorbei. Es gab weniger, aber ausführlichere Projekte. Durch das Zusammenarbeiten mit der KI habe ich vieles erreichen können, was über mein Wissen hinausging. Gleichzeitig verstand ich aber auch immer mehr von dem, was mir da ausgespuckt wurde. Wichtig war dabei, sich den Code ab und zu einmal Schritt für Schritt erklären zu lassen, wodurch ich bei den späteren Projekten mehr verstand. Anfangs war das allgemeine Arbeiten mit Künstlicher Intelligenz eine Herausforderung. Mich darauf einzulassen und das Gefühl des Schummelns hinter mir zu lassen, fiel mir schwer.... <span class="read-more">↓ mehr lesen</span></p>
+                <p class="full-text hidden">Das gesamte Semester ging sehr schnell vorbei. Es gab weniger, aber ausführlichere Projekte. Durch das Zusammenarbeiten mit der KI habe ich vieles erreichen können, was über mein Wissen hinausging. Gleichzeitig verstand ich aber auch immer mehr von dem, was mir da ausgespuckt wurde. Wichtig war dabei, sich den Code ab und zu einmal Schritt für Schritt erklären zu lassen, wodurch ich bei den späteren Projekten mehr verstand. Anfangs war das allgemeine Arbeiten mit Künstlicher Intelligenz eine Herausforderung. Mich darauf einzulassen und das Gefühl des Schummelns hinter mir zu lassen, fiel mir schwer. Als ich aber erkannte, dass ich meine Visionen und Ideen in dieser neuen Sprache des Programmierens mit einer Hilfe viel besser erarbeiten konnte, freundete ich mich mehr oder weniger damit an. Mein Arbeitsprozess wurde auch von Arbeit zu Arbeit effektiver. Ich bekam ein Gefühl für das Schreiben der Prompts.
+Die Aufgaben, die wir dieses Semester hatten, waren spannend, aber zu Beginn oft schwer zu greifen. Die Ideenfindung gestaltet sich für mich schwerer, da ich nicht durch zum Beispiel Skizzen an mein Ziel komme. Das unvoreingenommene Ausprobieren ist der Schlüssel. Zu erkennen, dass das spielerische Schreiben mit einer KI auch eine Art Skizze ist. Die Nature of Code Aufgabe war daher einladender für mich, da der Start der Idee im Beobachten der Umgebung bestand. 
+Unsere Arbeiten am Ende des Semesters gebündelt in einer Website zu sehen war interessant, da ich mir erst gar nicht vorstellen konnte, wie wir die digitalen Grundlagen beim Rundgang präsentieren würden. 
+Das Seminar hat meinen Blick für die digitale Welt definitiv geschärft. Ich weiß jetzt, wie ein Websitedesign entsteht, warum bestimmte Funktionen und Regeln wichtig sind und welchen Einfluss das Design haben kann. Für mich entwickelte sich auch erst in diesem zweiten Semester der Bezug zur Wirklichkeit. Ich erkannte die Kunst in den Projekten und verstand, wie sie am besten präsentiert werden. Mir wurde klar, dass wirklich a l l e s im digitalen Bereich mit dem Programmieren geschafft werden kann. Diesen Gedanken gab es bei mir vorher nicht.
+Im Großen und Ganzen habe ich viel gelernt, mir aber auch immer viele Fragen gestellt. Diese zu klären war ein Prozess. Ich denke, dass mir die Lehrveranstaltung zukünftiges Arbeiten erleichtern wird, ebenso wie es mir neue Türen geöffnet hat. Ich weiß nun, wie digitale Arbeiten erstellt werden, aber auch, wie man die eigenen Werke in der digitalen Welt präsentiert. Das Erkunden der Künstlichen Intelligenz im Rahmen des Seminars hat mich zum Teil auf die Weiterentwicklung dieser und damit auf das Zusammenspiel der Technik mit dem Analogen vorbereitet.<span class="read-less hidden">↑ weniger lesen</span></p>
+            </div>
         </section>
     </main>
     <footer>
         <p>Ylva Beischall - Grundlagen der digitalen Kommunikation 2 - HBK Braunschweig</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const fullText = button.parentElement.nextElementSibling;
+                const readLessBtn = fullText.querySelector('.read-less');
+                fullText.classList.toggle('hidden');
+                button.parentElement.classList.toggle('hidden');
+                readLessBtn.classList.toggle('hidden');
+            });
+        });
+
+        document.querySelectorAll('.read-less').forEach(button => {
+            button.addEventListener('click', () => {
+                const fullText = button.parentElement;
+                const truncatedText = fullText.previousElementSibling;
+                fullText.classList.toggle('hidden');
+                truncatedText.classList.toggle('hidden');
+                button.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
 
