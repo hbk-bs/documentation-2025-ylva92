@@ -2,6 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
 	console.log("DOM is loaded");
 });
 
+// Back to top button functionality
+window.addEventListener('scroll', () => {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+// Read more/less functionality
 document.querySelectorAll('.read-more').forEach(button => {
     button.addEventListener('click', () => {
         const fullText = button.parentElement.nextElementSibling;
@@ -20,14 +31,4 @@ document.querySelectorAll('.read-less').forEach(button => {
         truncatedText.classList.toggle('hidden');
         button.classList.toggle('hidden');
     });
-});
-
-// Show/hide back-to-top button based on scroll position
-window.addEventListener('scroll', () => {
-    const backToTopButton = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) { // Button appears after scrolling 300px
-        backToTopButton.classList.add('visible');
-    } else {
-        backToTopButton.classList.remove('visible');
-    }
 });

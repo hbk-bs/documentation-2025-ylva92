@@ -69,27 +69,6 @@ Im Großen und Ganzen habe ich viel gelernt, mir aber auch immer viele Fragen ge
 
     <a href="#" class="back-to-top">↑</a>
     <script src="index.js"></script>
-    <script>
-        document.querySelectorAll('.read-more').forEach(button => {
-            button.addEventListener('click', () => {
-                const fullText = button.parentElement.nextElementSibling;
-                const readLessBtn = fullText.querySelector('.read-less');
-                fullText.classList.toggle('hidden');
-                button.parentElement.classList.toggle('hidden');
-                readLessBtn.classList.toggle('hidden');
-            });
-        });
-
-        document.querySelectorAll('.read-less').forEach(button => {
-            button.addEventListener('click', () => {
-                const fullText = button.parentElement;
-                const truncatedText = fullText.previousElementSibling;
-                fullText.classList.toggle('hidden');
-                truncatedText.classList.toggle('hidden');
-                button.classList.toggle('hidden');
-            });
-        });
-    </script>
 </body>
 </html>
 
