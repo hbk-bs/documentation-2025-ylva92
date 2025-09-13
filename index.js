@@ -21,3 +21,13 @@ document.querySelectorAll('.read-less').forEach(button => {
         button.classList.toggle('hidden');
     });
 });
+
+// Show/hide back-to-top button based on scroll position
+window.addEventListener('scroll', () => {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) { // Button appears after scrolling 300px
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
