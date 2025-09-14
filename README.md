@@ -2,7 +2,7 @@
 
 ## Grundlagen der digitalen Gestaltiung 2 (SoSe 2025)
 
-dies ist eine Dokumentation meiner Arbeiten aus dem zweiten Semester. 
+dies ist eine Dokumentation meiner Arbeiten aus dem zweiten Semester des Studiengangs Visuelle Kommunikation an der HBK Bruanschweig. 
 
 Themen:
 - Teachable Machine
